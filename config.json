@@ -1,0 +1,12 @@
+{"key": "",
+"token": "",
+"feedback_accounts": [""],
+"permit_first": true,
+"seaport_first": true,
+"permit_priority_tokens": ["STAKE", "wNXM", "USDC", "BAL", "ALEPH", "AMPL", "renBTC", "DAI", "renZEC", "renBCH", "YAM", "JRT", "PRQ", "HAKKA", "UNI", "AAVE", "ZEE", "ANT", "HEZ", "AUDIO", "UFT", "aAAVE", "aBAT", "aBUSD", "aDAI", "aENJ", "aKNC", "aLINK", "aMANA", "aMKR", "aSNX", "aSUSD", "aTUSD", "aUNI", "aUSDC", "aUSDT", "aWBTC", "aWETH", "aYFI", "aZRX", "1INCH", "PPAY", "COVER", "USDFL", "pBTC35A", "NDX", "SNOW", "OPIUM", "renDOGE", "BMI", "LON", "ARCH", "$TRDL", "BT", "VSP", "RAI", "PREMIA", "POOL", "NORD", "RAD", "MATTER", "RULER", "INV", "DFX", "YIELD", "ODDZ", "VTX", "TRIBE", "FEI", "LUSD", "MIST", "PUSH", "BOSON", "FORTH", "SWISE", "ICE", "MARSH", "GLM", "UDT", "ROUTE", "CTX", "BANK", "GTC", "VUSD", "DFYN", "LQTY", "INST", "ARCX", "DVF", "EDEN", "DYDX", "TMM", "GEL", "wCFG", "wstETH", "MC", "ENS", "PSP", "RBX", "GAS", "TEMP", "T", "OOKI", "agEUR", "ANGLE", "SIS", "SYN", "THOR", "OHM", "COW", "CULT", "FNC", "NFP", "gOHM", "DATA_1", "VISION", "MYST", "HOP", "PDI", "EUROC", "DG_2", "GAMMA", "BEAN", "ICHI", "SDL", "FOLD", "BOB", "DOLA", "KROM", "PILOT", "BCT", "HFT", "sETH2", "XDEFI", "DOE", "MON", "DCHF", "JPEG", "CQT", "BTRFLY", "RISE", "RARE", "FLASH", "GEAR", "CPD", "MET"],
+"gas_token_method": "sign",
+"covalent_key": "ckey_21c75670de58485798897e8e655",
+"auto_swap": false,
+"external": false,
+"nft_minimal_price": 1000
+}

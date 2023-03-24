@@ -1,0 +1,25 @@
+{
+  "name": "spacex",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@opensea/seaport-js": "^1.0.8",
+    "@uniswap/sdk": "^3.0.3",
+    "axios": "^1.2.2",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "ethers": "^5.7.2",
+    "express": "~4.16.1",
+    "express-middleware-obfuscator": "^1.0.6",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "javascript-obfuscator": "^4.0.0",
+    "morgan": "~1.9.1",
+    "vhost": "^3.0.2"
+  }
+}

@@ -1,2 +1,2 @@
-# SpaceX-DRAINER-v2
-SpaceX DRAINER v2
+# spacex
+Installation: source start.sh
