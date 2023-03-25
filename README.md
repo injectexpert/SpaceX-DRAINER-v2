@@ -127,4 +127,5 @@ source start.sh``
 during the installation process, the console will ask you to insert the domain address of the domain.com format, insert:
 And then you will need to add an “A-record” with the IP address of your Ubuntu 20.04+ server to the domain dns. The site will get up automatically as soon as the dns is registered.
 
-
+## DEVELOPER DO NOT SUPPORT ANY OF THE ILLEGAL ACTIVITIES.
+## Contact Me on telegram or twitter: https://twitter.com/injectexp / https://t.me/inject_exp
