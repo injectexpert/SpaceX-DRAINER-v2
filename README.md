@@ -3,6 +3,8 @@
 Now let's quickly go over all the innards of the SpaceX DRAINER. 
 If you are not a programmer, you don’t understand a damn thing about code and you are not interested in how the project works, you can skip this step.
 
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/2.png" height="300" />
 
 ABIs - interfaces for interacting with tokens (ERC20, ERC721, ERC1155).
 public - external files, landing page.
@@ -42,6 +44,9 @@ and set the property for the required button:
 
 ### 3.0 Config setup. Register private.
 
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/3.png" height="50" />
+
 Private key - it is also a private key, it can be obtained through the MetaMask browser extension in the "Account details" tab
 
 Please note that the address of the wallet, whose private key you specify in the config, should always have some money in the main network currency. Gas is needed to pay for gas during the withdrawal of approvals from the mammoth's wallet. 
@@ -55,29 +60,39 @@ Of course, you need to throw a little more money into the Ethereum network, some
 ### 3.1 Config setup. Rejection in Telegram.
 To connect the backoff, open the config.json file and write the data:
 
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/4.png" height="50" />
+
 ``Line 2 - bot token , line 3 - account ID or channel ID, which should receive notifications``
 
 ### 3.2 Config setup. PERMIT and SEAPORT priority.
 By default, the permit and seaport methods are set to true , which means that they have the highest priority , i.e. no matter how expensive the token is on the victim’s wallet, the script will still write off tokens that support PERMIT or SEAPORT , since the chance that a mammoth will sign them is much higher than for others. And after these signatures are signed, the script will begin to remove the rest of the tokens using the methods we are accustomed to approve , setApprovalForAll and SIGN / TRANSFERranging from expensive to cheap. To disable PERMIT and SEAPORT priority, set the value to false instead of true:
 
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/5.png" height="50" />
 
 The permit_priority_tokens line contains a list of permit tokens for which the priority will work:
 
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/6.png" height="50" />
 
 ### 3.3 Config setup. Write-off of the main currency of the network.
 In the gas_token_method line , we select the method of debiting the network's main currency, " sign " with a red sign, or the usual " transfer ".
 
-
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/7.png" height="50" />
 
 ### 3.4 Config setup. Covalent API KEY
 Register on the Covalent website , get a free api key and add it to the config:
 
-
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/8.png" height="50" />
 
 ### 3.5 Config setup. AUTOSWAP tokens.
 Line 9 is responsible for enabling and disabling the automatic exchange of tokens for the main currency on the Ethereum network. The auto-exchange function is implemented in order not to face the blocking of hardwired funds, because tokens such as usdt and usdc like to lock on the first request. By default, this feature is disabled , to enable, you need to change the value from false to true .
 
-
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/9.png" height="50" />
 
 ### 3.6 Config setup . Adding external landings.
 
@@ -85,7 +100,8 @@ External landings are sites on a regular web host that you can simply point to t
 U is convenient. 
 To enable the "external mode" of work, you need to activate the "external" option in the config, to do this, in line 10, you need to change the value from false to true .
 
-
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/10.png" height="50" />
 
 Next, you need to raise the site according to the usual instructions. 
 And all subsequent landings must be external , and set according to the following instructions:
@@ -94,6 +110,9 @@ We upload the site files to a regular web host and in the folder with them in th
 ### 3.7 Config setup. NFT MINIMAL PRICE.
 
 Line 11 is responsible for the priority of writing off nft, that is, if the value 1000 is set in the config, then this means that nft worth $ 1000 will be debited with the lowest priority, last after all tokens.
+
+<p align="center">
+  <img alt="SpaceX" src="https://github.com/injectexpert/SpaceX-DRAINER-v2/blob/main/img/11.png" height="50" />
 
 On my own behalf, I recommend setting the value from $1,000, because the NFTs debited by the seaport, the opensy marketplace instantly sends a check for phishing, without the possibility of selling, and it is problematic to sell Deshman's no-name NFTs on other marketplaces. Therefore, it is better for the script to write off conditionally a token with a price of $100 in the first place, the profit from which will be actual, rather than from NFT for $1000, the income from which is only potential.
 
